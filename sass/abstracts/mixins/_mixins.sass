@@ -1,0 +1,9 @@
+// Center block
+=center-block
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+// Column width with margin
+=column-width($numberColumns: 3)
+  width: map-get($columns, $numberColumns) - $columns__margin * ($numberColumns - 1) / $numberColumns
