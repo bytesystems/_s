@@ -4,11 +4,11 @@ module.exports = function(){
     const config = {
 
         localhost: "192.168.178.110",
-
+        proxy: "https://project.site",
         folders: {
-            root: path.resolve('/'),
-            assets: path.resolve('/assets'),
-            dist: path.resolve('/dist'),
+            root: path.resolve('./'),
+            assets: path.resolve('./assets'),
+            dist: path.resolve('./dist'),
         },
 
         ftp: {
@@ -23,12 +23,12 @@ module.exports = function(){
     };
 
     config.allsass = [
-        path.resolve(config.folders.assets+'/sass/**/*.sass')
+        config.folders.assets+'/sass/**/*.sass'
     ]
 
     config.alljs = [
-        path.resolve(config.folders.assets+'./js/libs/**/*.js'),
-        path.resolve(config.folders.assets+'./js/**/*.js')
+        config.folders.assets+'./js/libs/**/*.js',
+        config.folders.assets+'./js/**/*.js'
     ]
 
     return config;
