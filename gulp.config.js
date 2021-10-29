@@ -17,7 +17,7 @@ module.exports = function(){
                 user: '*',
                 password: '*'
             },
-            root: '/web/wp-content/themes/fink-numrich'
+            root: '/wp-content/themes/_s'
         }
 
     };
